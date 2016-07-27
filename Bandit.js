@@ -1,20 +1,20 @@
-function (richag)
+function (random_a, random_b, random_c)
 {
 
 var a = (1, 2, 3, 4, 5);
 var b = (1, 2, 3, 4, 5);
 var c = (1, 2, 3, 4, 5);
 
-	var ran_a = (Math.random() * a)
+	var random_a = (Math.random() * a)
 	{
-	return ran_a
+	return random_a
 	}
-	var ran_b = (Math.random() * b)
+	var random_b = (Math.random() * b)
 	{
-	return ran_b
+	return random_b
 	}
-	var ran_c = (Math.random() * c)
+	var random_c = (Math.random() * c)
 	{
-	return ran_c
+	return random_c
 	}
 }
