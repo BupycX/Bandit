@@ -1,20 +1,24 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link href="style_bandit.css" rel="stylesheet">
 </head>
 
 <body>
 <script src="Bandit.js"></script>
 		
-		<p><input type="text" size="1" id="random_a">
+		<input type="text" size="10" value="500" id="money" disabled="1"> рублей
+
+		<input type="button" value="Пополнить баланс" id="balanse_up" Onclick="balanse_up ()" class="balanse_up"> 
+		<p>
+
+		<input type="text" size="1" value="" id="random_a" disabled="1">
 		
-		<input type="text" size="1" id="random_b">
+		<input type="text" size="1" value="" id="random_b" disabled="1">
 		
-		<input type="text" size="1" id="random_c">
+		<input type="text" size="1" value="" id="random_c" disabled="1">
 		
-		<input type="button"
-			   value="Рычаг"
-			   Onclick="richag (random_a)">
+		<input type="button" value="Рычаг" Onclick="richag ()">
 				  
 		<br><br/>
 </body>

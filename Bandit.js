@@ -1,20 +1,33 @@
-function (random_a, random_b, random_c)
+function richag()
 {
+var random_a = document.getElementById('random_a');
+var random_b = document.getElementById('random_b');
+var random_c = document.getElementById('random_c');
+var money = document.getElementById('money');
 
-var a = (1, 2, 3, 4, 5);
-var b = (1, 2, 3, 4, 5);
-var c = (1, 2, 3, 4, 5);
+	
+	if (money.value <=0)
+	{
+	alert ("У вас недостаточно денег");
+	return;
+	}
+	money.value = money.value - 10;
+	{
+	random_a.value = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+	random_b.value = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+	random_c.value = Math.floor(Math.random() * (20 - 1 + 1)) + 1;
+	}
+	if (random_a.value == random_b.value && random_b.value == random_c.value)
+	{
+		money.value = parseInt(money.value) + 100
+	}
+	if (random_a.value == random_b.value || random_b.value == random_c.value || random_a.value == random_c.value)
+	{
+		money.value = parseInt(money.value) + 50
+	}
+}
 
-	var random_a = (Math.random() * a)
-	{
-	return random_a
-	}
-	var random_b = (Math.random() * b)
-	{
-	return random_b
-	}
-	var random_c = (Math.random() * c)
-	{
-	return random_c
-	}
+function balanse_up ()
+{
+money.value = parseInt(money.value) + 100
 }
