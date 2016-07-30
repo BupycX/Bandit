@@ -29,5 +29,9 @@ var money = document.getElementById('money');
 
 function balanse_up ()
 {
-money.value = parseInt(money.value) + 100
+var donat = document.getElementById('donat');
+if (donat.value <= 0)
+return;
+donat.value = donat.value - 1;
+money.value = parseInt(money.value) + 100;
 }
